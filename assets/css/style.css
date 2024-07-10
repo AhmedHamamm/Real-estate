@@ -36,7 +36,7 @@
   --z-fixed: 100;
 }
 /* ----- Responsive typography */
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   :root {
     --biggest-font-size: 4rem;
     --h1-font-size: 2.25rem;
@@ -227,7 +227,7 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (width <= 1023px) {
   .nav-menu {
     position: fixed;
     bottom: 2rem;
@@ -870,7 +870,7 @@ body.dark-theme {
 
 /*----- BREAKPOINTS -----*/
 /* For small screen */
-@media screen and (max-width: 350px) {
+@media screen and (width <= 350px) {
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -890,7 +890,7 @@ body.dark-theme {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (width <= 320px) {
   .nav-menu {
     padding: 1.3rem;
   }
@@ -939,7 +939,7 @@ body.dark-theme {
 }
 
 /* For medium screen */
-@media screen and (min-width: 576px) {
+@media screen and (width >= 576px) {
   .nav-menu {
     width: 342px;
   }
@@ -957,7 +957,7 @@ body.dark-theme {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (width >= 767px) {
   .home-container {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 2rem;
@@ -998,7 +998,7 @@ body.dark-theme {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (width >= 1023px) {
   .section {
     padding: 7.5rem 0 1rem;
   }
@@ -1195,7 +1195,7 @@ body.dark-theme {
   }
 }
 
-@media screen and (min-width: 1040px) {
+@media screen and (width >= 1040px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1207,13 +1207,13 @@ body.dark-theme {
 }
 
 /* For Big screen (2K & 4K resolutions) */
-@media screen and (min-width: 2048px) {
+@media screen and (width >= 2048px) {
   body {
     zoom: 1.5;
   }
 }
 
-@media screen and (min-width: 3840px) {
+@media screen and (width >= 3840px) {
   body {
     zoom: 2;
   }
